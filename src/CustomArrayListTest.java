@@ -88,7 +88,7 @@ public class CustomArrayListTest {
 
         list.mergeSort();
 
-        assertEquals(1, list.get(0));
+        assertEquals(1, list.get(0)); // когда несколько ассертов используй assertAll
         assertEquals(3, list.get(1));
         assertEquals(5, list.get(2));
         assertEquals(8, list.get(3));

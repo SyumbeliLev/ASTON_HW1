@@ -2,6 +2,7 @@ package src;
 
 import java.util.Arrays;
 
+// почему не использовал интерфейс?
 /**
  * CustomArrayList - простая реализация динамического массива на Java с возможностью сортировки слиянием.
  *
@@ -51,7 +52,7 @@ public class CustomArrayList<T extends Comparable<T>> {
      */
     public void add(int index, T element) {
         if (index < 0 || index > size) {
-            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
+            throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);// используй String.format
         }
 
         ensureCapacity();
